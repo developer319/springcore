@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="
+ http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <!-- This is our bean -->
+ 
+ <bean class="com.springcore.collections.Employee" name="emp1">
+ <property name="name" value="Radhe"/>
+ <property name="phones">
+ <list>
+ 
+ <value>7891475953</value>
+ <value>9876543210</value>
+ <value>8889221111</value>
+ <!-- To insert null values -->
+ <null/>
+ </list>
+ 
+ </property>
+<property name="addresses">
+<set>
+<value>Delhi</value>
+<value>Luckhnow</value>
+<value>Jaipur</value>
+</set>
+</property>
+
+<property name="courses">
+<map>
+<entry key="java" value="2 months"/>
+<entry key="python" value="1 months"/>
+<entry key="javascript" value="15 days"/>
+
+</map>
+
+</property>
+ </bean>
+ 
+ <bean class="com.springcore.collections.Employee" name="emp2">
+ <property name="name" value="Joy"/>
+ <property name="phones">
+ <!-- When you have only one value in list then we can skip the list tag -->
+ <value>7891475913</value>
+ </property>
+<property name="addresses">
+<!-- When you have only one value in list then we can skip the list tag -->
+<value>Delhi</value>
+</property>
+
+<property name="courses">
+<map>
+<entry key="java" value="2 months"/>
+</map>
+
+
+
+</property>
+ </bean>
+ </beans>
