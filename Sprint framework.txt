@@ -1,0 +1,78 @@
+Spring framework
+
+1. Spring core
+2. Spring data integration
+3. spring web
+4. springboot
+
+
+Prerequisite of course:
+
+1. core java --> OOPS, Class , Object, Overloading, Overriding
+2. JDBC 
+3. Servlet & JSP
+
+
+
+
+
+
+Q1. What is Spring?
+Answers1. 
+
+ a.Spring is a Dependency Injection framework to make a java application loosely coupled.
+b. Spring framework makes the easy developement of JavaEE application.
+c. I was developed by Rod Johnson in 2003.
+
+
+Dependency Injection --> It is a design pattern.
+
+Inversion of Control -->  Inversion of Control (IoC) is an object-oriented programing practice whereby the object coupling is bounded at runtime by an "assembler" object and are typically not knowable at compile time using static analysis.
+
+
+Spring Modules-->
+
+Spring Core
+	Core - Beans - Context- SpeL
+
+	AOP - Aspect - Instrumentation - Messaging
+	AOP --> Aspect Oriented Programming --> used to decouple the code
+
+Data Access / Integration
+
+	JDBC ---> enable us to use jdbc easily  
+	ORM --> to use ORM tool like hibernate with spring
+	JMS(Java Mesaging services) --> for messaging services 
+	OXM --> provides abstraction layer that supports object xml mapping
+
+Web Module 
+
+	Spring Web
+	Spring Servlet
+	Sprint Portlet
+	Spring WebSocket
+
+Test Module --> provides supports for unit testing and integration testing.
+
+
+Spring IOC Container --> predefined program provided by spring for:
+
+	1. creates object
+	2. hold objects in memory
+	3. inject one object into another object i.e. dependency injetion
+	4. maintain lifecycle of an object from creation to destruction of the object.
+	5. We have to provide Bean info and configuration info. Spring container performs the injection based on the configuration 			provided. 
+		
+
+ApplicationContext Interface is implemented by AnnotationConfigApplicationContext , ClasspathXMLApplicationcontext, FileSystemXMLApplicationcontext.
+
+
+
+Dependency Injection can be done in 2 ways:
+
+	1. Using Setter Injection
+	2. Using Constructor Injection
+
+Configuration File --> Where we declare beans and its dependency.
+
+Note :: Bean is a simple java class which contains the attributes and getters and setters
